@@ -78,7 +78,7 @@ pipeline {
           script {
             sh '''
               heroku container:login
-              heroku create $PRODUCTION || echo "project already exist"
+              heroku create $PRODUCTION || echo "project already exist deja"
               heroku container:push -a $PRODUCTION web
               heroku container:release -a $PRODUCTION web
             '''
