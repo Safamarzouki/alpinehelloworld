@@ -15,7 +15,7 @@ pipeline {
                 }
              }
         }
-        stage('Run container based on builded image') {
+        stage('Run container based on builded image from source') {
             agent any
             steps {
                script {
